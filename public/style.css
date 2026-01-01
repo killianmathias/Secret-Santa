@@ -1,0 +1,145 @@
+:root {
+  --red: #d42426;
+  --green: #2e8b57;
+  --gold: #f1c40f;
+  --white: #ffffff;
+  --bg-color: #1a1a1a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--red);
+  background-image: linear-gradient(135deg, #8e0e00 10%, #1f1c18 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.container {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  border: 5px solid var(--gold);
+  position: relative;
+  z-index: 10;
+}
+
+h1 {
+  font-family: "Mountains of Christmas", cursive;
+  color: var(--green);
+  font-size: 3rem;
+  margin: 0;
+}
+
+p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.christmas-btn {
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 36, 38, 0.4);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.christmas-btn:hover {
+  transform: scale(1.05);
+  background-color: #b31b1d;
+  box-shadow: 0 6px 20px rgba(212, 36, 38, 0.6);
+}
+
+.christmas-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+#result-area {
+  margin-top: 2rem;
+  border-top: 2px dashed #eee;
+  padding-top: 1rem;
+}
+
+#participants-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.result-item {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border-left: 4px solid var(--green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.arrow {
+  color: var(--red);
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+#error-message {
+  margin-top: 1rem;
+  color: var(--red);
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+    radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+    radial-gradient(3px 3px at 300px 250px, #fff, transparent);
+  background-size: 200px 200px;
+  animation: snow 3s linear infinite;
+  opacity: 0.3;
+}
+@keyframes snow {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 100px 100px;
+  }
+}
