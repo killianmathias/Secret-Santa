@@ -1,10 +1,5 @@
 # 🎅 Secret Santa Generator
 
-![Noël](https://img.shields.io/badge/Thème-Noël-red?style=for-the-badge&logo=gifts)
-![NodeJS](https://img.shields.io/badge/Node.js-green?style=for-the-badge&logo=nodedotjs)
-![Express](https://img.shields.io/badge/Express-black?style=for-the-badge&logo=express)
-![Privacy](https://img.shields.io/badge/Données-Privées-blue?style=for-the-badge&logo=lock)
-
 Un outil simple, local et privé pour organiser le tirage au sort des cadeaux de Noël en famille ou entre amis. Fini les papiers dans le chapeau ! 🎩✨
 
 ---
